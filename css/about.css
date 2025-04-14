@@ -1,0 +1,44 @@
+:root {
+    --primary-color: #06bc94;
+    --background-color: #23242c;
+    --white-color: #fff;
+    --mid-white-color: #e9e2e2;
+    --secondary-bg-color: #21272f;
+}
+
+.about-section-container {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.about-image img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.about-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+@media (min-width: 784px) {
+    .about-section {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        padding-top: 50px;
+        padding-left: 40px;
+        padding-right: 40px;
+        box-sizing: border-box;
+    }
+}
