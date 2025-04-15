@@ -43,6 +43,28 @@ a {
     color: var(--white-color);
 }
 
+.toggle-menu {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    cursor: pointer;
+}
+
+/* .mobile-nav {
+    width: 100%;
+} */
+
+.right-nav-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
 @media (min-width: 640px) {
 
 }
@@ -51,6 +73,10 @@ a {
     .navbar {
         padding-left: 40px;
         padding-right: 40px;
+    }
+
+    .toggle-menu {
+        display: none;
     }
 
     .nav-items {
