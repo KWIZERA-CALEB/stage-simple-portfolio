@@ -35,11 +35,10 @@ function renderProjects() {
     const noProjectContainer = document.getElementById('no-project-container');
     const projects = JSON.parse(localStorage.getItem('projects')) || [];
 
-    // Clear the container
     projectContainer.innerHTML = '';
 
     if (projects.length === 0) {
-        noProjectContainer.innerHTML = '<p style="text-align:center; color: #fff;">No projects to show</p>';
+        noProjectContainer.innerHTML = '<p style="text-align:center; margin-top: 50px; color: rgba(255,255,255, 0.5);">No projects to show</p>';
         return;
     }
 
